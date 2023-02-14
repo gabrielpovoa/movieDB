@@ -44,7 +44,7 @@ const DetailsMap = () => {
     return <>
         <Container background={movie?.poster_path}>
             <Movie>
-                <img src={movie?.poster_path} alt={`${movie?.overview} - ${movie?.title}`} />
+                <img src={movie?.poster_path} alt={`${movie?.overview} - ${movie?.title}`}/>
             </Movie>
             <Details>
                 <h1>{movie?.title}</h1>

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import banner from '../../assets/bg.png'
+import gorilla from '../../assets/gorilla.jpeg'
 
 export default createGlobalStyle`
     * {
@@ -21,7 +21,8 @@ export default createGlobalStyle`
     body {
         font-family: 'Nunito Sans', sans-serif;
         background-color: #778;
-        background-image: url(${banner});
+        background-image: url(${gorilla});
+        /* background-color: #7159c1; */
         background-attachment: fixed;
         background-repeat: no-repeat;
         color: #FFF;

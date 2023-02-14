@@ -5,7 +5,7 @@ interface backgroundProps {
 }
 
 export const Container = styled.main<backgroundProps>`
-    padding: 2rem 5%;
+    padding:3% ;
     background-image:url(${(props) => props.background});
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -24,13 +24,26 @@ export const Container = styled.main<backgroundProps>`
 export const Movie = styled.section`
     width: 30rem;
     max-width: 100%;
+    height: 100%;
+    
     & img {
         border-radius: 1rem;
-        border: solid #FFF .2rem;
-        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        box-shadow: 0px 10px 15px -3px rgba(255,255,255,0.1);
         width: 100%;
-        object-fit: cover;
+        animation: image 4s linear infinite;
     } 
+
+    @keyframes image {
+
+        0%,100% {
+            transform: scale(.9);
+            border-radius: var(4% 95% 6% 95%/95% 4% 92% 5%);
+        }
+        0% {
+            transform: scale(.8);
+            border-radius: var(95% 4% 97% 5%/4% 94% 3% 95%);
+        }   
+    }
 `;
 
 export const Details = styled.section`
